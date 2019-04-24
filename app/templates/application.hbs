@@ -1,5 +1,24 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-<WelcomePage />
-{{!-- Feel free to remove this! --}}
+<XFoo />
+<ol>
+  <li>Open the ember inspector</li>
+  <li>Click on the "Components" tab</li>
+  <li>
+    You should see an error like
+    <pre>
+      VM143:1647 Uncaught TypeError: component.get is not a function
+        at exports.default.controllerForComponent (&lt;anonymous&gt;:1647:34)
+        at exports.default.controllerForComponent (&lt;anonymous&gt;:1655:21)
+        at &lt;anonymous&gt;:1333:38
+        at Array.forEach (&lt;anonymous&gt;)
+        at exports.default.componentsForController (&lt;anonymous&gt;:1332:18)
+        at &lt;anonymous&gt;:1300:31
+        at Array.map (&lt;anonymous&gt;)
+        at exports.default.buildComponentTrees (&lt;anonymous&gt;:1299:26)
+        at exports.default.build (&lt;anonymous&gt;:1220:61)
+        at Class.viewTree (&lt;anonymous&gt;:4732:33)
+    </pre>
+
+  </li>
+</ol>
 
 {{outlet}}
