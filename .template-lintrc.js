@@ -3,6 +3,7 @@
 module.exports = {
   extends: 'recommended',
   rules: {
+    'block-indentation': false,
     'no-implicit-this': true,
   }
 };

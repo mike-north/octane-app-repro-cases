@@ -1,0 +1,10 @@
+<button {{on "click" (fn (mut this.isShown) (not this.isShown))}}>
+  {{if this.isShown "Hide" "Show" }}
+</button>
+
+{{#if this.isShown}}
+  <p>
+    My beautiful content
+    <img src="http://placecorgi.com/300/314" alt="">
+  </p>
+{{/if}}
