@@ -1,5 +1,9 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-<WelcomePage />
-{{!-- Feel free to remove this! --}}
-
+<p>
+  <b>Date by number (1546416000000)</b><br>
+  {{format-date 1546416000000}}
+</p>
+<p>
+  <b>Date by string (2019-01-02T08:00:00.000Z)</b><br>
+  {{format-date "2019-01-02T08:00:00.000Z"}}
+</p>
 {{outlet}}
